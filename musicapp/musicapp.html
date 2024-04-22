@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>musicplayer</title>
+    <link rel="stylesheet" href="musicapp.css">
+    <script src="https://kit.fontawesome.com/a8eb7b1295.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circul">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circul">
+                    <i class="fa-solid fa-bars"></i>
+                </div> 
+            </nav>
+            <img src="img_0852-1.jpg" class="song-img">
+            <h1 c> world in my eyes</h1>
+            <p>loudspeakers</p>
+            
+            <audio controls id="song">
+                <source src="LOUDspeakers  World In My Eyes HQ.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress" min="0">
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playpause()"><i class="fa-solid fa-play" id="controlicon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+            <div class="repeat" onclick="repeat()">
+                <i class="fa-solid fa-repeat" id="repeatbutton"></i>
+            </div>
+        </div>
+    </div>
+    <script src="musicapp.js"></script>
+</body>
+</html>
